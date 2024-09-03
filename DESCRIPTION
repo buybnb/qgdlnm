@@ -1,0 +1,16 @@
+Package: QGDLNM
+Type: Package
+Title: Quantile G-computation Distributed Lag Non-linear Model (QG-DLNM)
+Version: 0.1.0
+Authors@R: c(person("Qiaoxuan","Lin",email="qxlin03@outlook.com",role=c("aut","cre")),
+            person("Ziqiang","Lin",email="linziqiang0314@gmail.com",role=c("aut")),
+            person("Wenjun","Ma",email="mawj@gdiph.org.cn",role=c("aut"))) 
+Maintainer: The package maintainer <qxlin03@outlook.com>
+Description: By embedding the distributed lag non-linear model (DLNM) into the quantile g-computation to enable the quantile g-computation to handle lag effects effectively. Lin, Ziqiang et al. (2024) <doi:10.1016/j.envpol.2024.123469>.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: randomForest,mclust,factoextra,ggplot2,dlnm,dplyr,splines,mvmeta,lubridate,qgcomp,fastDummies,stringr
+LazyData: true
+RoxygenNote: 7.1.2
+
