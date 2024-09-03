@@ -121,7 +121,7 @@ msmfit=function(formula,Xnm,data,cb=NULL,cb_lag=NULL,cb_argvar=NULL,cb_arglag=NU
 
 
 
-qglag = function(formula,Xnm,data,cb=NULL,cb_lag=NULL,cb_argvar=NULL,cb_arglag=NULL,
+qgdlnm = function(formula,Xnm,data,cb=NULL,cb_lag=NULL,cb_argvar=NULL,cb_arglag=NULL,
                  degree=1,boot=200,sameinterval = TRUE,q=4){
 
 

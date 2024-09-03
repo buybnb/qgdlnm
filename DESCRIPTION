@@ -10,7 +10,7 @@ Description: By embedding the distributed lag non-linear model (DLNM) into the q
 Depends: R (>= 3.5.0)
 License: GPL-3
 Encoding: UTF-8
-Imports: randomForest,mclust,factoextra,ggplot2,dlnm,dplyr,splines,mvmeta,lubridate,qgcomp,fastDummies,stringr
+Imports: mclust,factoextra,ggplot2,dlnm,dplyr,splines,mvmeta,lubridate,qgcomp,fastDummies,stringr
 LazyData: true
 RoxygenNote: 7.1.2
 

@@ -1,11 +1,11 @@
-\name{qglag}
-\alias{qglag}
+\name{qgdlnm}
+\alias{qgdlnm}
 \title{Quantile G-computation Distributed Lag Non-linear Model (QG-DLNM)}
 \description{
 A method that incorporates the distributed lag non-linear model (DLNM) into quantile g-computation, allowing it to effectively manage lag effects.
 }
 \usage{
-qglag(formula,Xnm,data,cb=NULL,cb_lag=NULL,cb_argvar=NULL,cb_arglag=NULL,
+qgdlnm(formula,Xnm,data,cb=NULL,cb_lag=NULL,cb_argvar=NULL,cb_arglag=NULL,
                  degree=1,boot=200,sameinterval = TRUE,q=4)
 }
 \arguments{
@@ -34,9 +34,6 @@ qglag(formula,Xnm,data,cb=NULL,cb_lag=NULL,cb_argvar=NULL,cb_arglag=NULL,
   To imput user specified initial labels, please use the function \code{initial}
 }
 \references{
-  Breiman, L. (2001), Random Forests, \emph{Machine Learning} 45(1),
-  5-32.
-
   Lin Z, Wang M, Ma J, et al. The joint effects of mixture exposure to multiple meteorological factors on step count: A panel study in China[J]. \emph{Environmental Pollution}, 2024, 346: 123469.
 }
 \examples{
@@ -44,7 +41,7 @@ qglag(formula,Xnm,data,cb=NULL,cb_lag=NULL,cb_argvar=NULL,cb_arglag=NULL,
 dd=chicagoNMMAPS[1:100,]
 varfun = "bs"
 arglag <- list(fun="bs",df=4)
-uzz=qglag(death ~ temp +
+uzz=qgdlnm(death ~ temp +
             rhum + pm10 + o3 + ns(time, 7 * length(unique(year))) +
         dow,Xnm=c("temp", "rhum","pm10"),data=dd,cb=c("temp","rhum"),cb_lag=c(21,5),
       cb_argvar=list(list(fun=varfun,df=3),list(fun=varfun,df=3)),cb_arglag = list(arglag,arglag),
