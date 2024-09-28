@@ -1,4 +1,4 @@
 import("mclust","factoextra","ggplot2",
        "dlnm","dplyr","splines","mvmeta","lubridate","qgcomp","fastDummies","stringr")
 importFrom("stats", "as.formula", "binomial", "lm", "quantile", "sd")
-export(qgdlnm)
+export(qgdlnm,qgplot)
